@@ -15,7 +15,7 @@ import './style/Add.css'
   async function Updatedata(e){
         e.preventDefault();
         try{
-            const response= await axios.put(`http://localhost:3001/api/employess/${id}`,{empNo,empName,empSal});
+            const response= await axios.put(`https://employee-k9t6.onrender.com/api/employess/${id}`,{empNo,empName,empSal});
             alert("data updated successfully");
         }
         catch(err){
