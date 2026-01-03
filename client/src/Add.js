@@ -13,7 +13,7 @@ function Add(){
                 e.preventDefault();
                 try
                 {
-                    const response= await axios.post('http://localhost:3001/api/employess',{empNo,empName,empSal});
+                    const response= await axios.post('https://employee-k9t6.onrender.com',{empNo,empName,empSal});
                     //alert(JSON.stringify(response.data,null,2));
                     alert(response.data.message);
 
